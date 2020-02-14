@@ -16,3 +16,6 @@ router.delete("/books/:id", (req, res) => {
 });
 
 module.exports = router;
+
+// todo: add routes folder that has routes to books and users
+// todo: catch errors and set res status
