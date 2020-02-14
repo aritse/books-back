@@ -1,0 +1,25 @@
+{
+  "name": "google-book-search-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aritse/google-book-search-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aritse/google-book-search-api/issues"
+  },
+  "homepage": "https://github.com/aritse/google-book-search-api#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.9.0",
+    "morgan": "^1.9.1"
+  }
+}
