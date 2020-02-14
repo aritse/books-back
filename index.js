@@ -1,9 +1,11 @@
 const express = require("express");
 const logger = require("morgan");
 const mongoose = require("mongoose");
+const cors = require("cors");
 
 // todo: configure cors, port, host, database etc for heroku
 const app = express();
+app.use(cors());
 
 app.use(logger("dev"));
 
