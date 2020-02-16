@@ -5,7 +5,16 @@ const cors = require("cors");
 
 // todo: configure cors, port, host, database etc for heroku
 const app = express();
-app.use(cors());
+// app.use(
+//   cors({
+//     origin: ["http://localhost:3000"]
+//   })
+// );
+app.use(
+  cors({
+    origin: ["https://ari-book-search.herokuapp.com"]
+  })
+);
 
 app.use(logger("dev"));
 
@@ -18,5 +27,4 @@ const routes = require("./routes");
 app.use("/api", routes);
 
 const port = process.env.PORT || 8080;
-const host = process.env.HOST || "http://localhost";
-app.listen(port, console.log(`express app is listening on ${host}:${port}`));
+app.listen(port, console.log(`express app is listening on ${port}`));
