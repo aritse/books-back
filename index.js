@@ -12,7 +12,7 @@ const app = express();
 // );
 app.use(
   cors({
-    origin: ["https://ari-book-search.herokuapp.com"]
+    origin: ["https://questbooks.herokuapp.com"]
   })
 );
 
